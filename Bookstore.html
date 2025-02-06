@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyBookStore - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card-img-top {
+            height: 200px; /* Adjust as needed */
+            object-fit: cover; /* Ensures uniform image display without distortion */
+            width: 100%; /* Ensures images take full card width */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <h1 class="text-white">MyBookStore</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogue.html">Catalogue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactsection">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container my-4">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Welcome to MyBookStore</h1>
+            <p class="lead">Discover your next great read from our vast collection.</p>
+            <a href="catalogue.html" class="btn btn-primary btn-lg">Click here to explore catalogue</a>
+        </div>
+    </section>
+
+    <!-- Book Catalogue -->
+    <main class="container">
+        <h2 class="text-center mb-4">Featured Books</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="1.webp" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Title 1</h5>
+                        <p class="card-text">A brief description of the book.</p>
+                        <p class="text-success">₹799</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="2.webp" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Title 2</h5>
+                        <p class="card-text">A brief description of the book.</p>
+                        <p class="text-success">₹199</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="4.webp" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Title 3</h5>
+                        <p class="card-text">A brief description of the book.</p>
+                        <p class="text-success">₹499</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="4.webp" class="card-img-top" alt="Book 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Title 4</h5>
+                        <p class="card-text">A brief description of the book.</p>
+                        <p class="text-success">₹599</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="3.webp" class="card-img-top" alt="Book 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Title 5</h5>
+                        <p class="card-text">A brief description of the book.</p>
+                        <p class="text-success">₹399</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="3.webp" class="card-img-top" alt="Book 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Title 6</h5>
+                        <p class="card-text">A brief description of the book.</p>
+                        <p class="text-success">₹299</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Contact Form Section -->
+    <div class="container mt-5">
+    <h2 class="text-center">Contact Us</h2>
+    <p class="text-center">Feel free to reach out to us with any questions or feedback!</p>
+
+  <div class="row" id="contactsection">
+    <div class="col-md-8 mx-auto">
+        <form action="contact_form_submission.php" method="POST">
+            <!-- Name Input -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+            </div>
+
+            <!-- Email Input -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Your Email">
+            </div>
+
+            <!-- Subject Input -->
+            <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" required placeholder="Subject of your message">
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2025 MyBookStore. All rights reserved.</p>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 
