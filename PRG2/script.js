@@ -87,7 +87,7 @@ function loadInventory() {
             <td>${item.name}</td>
             <td>${stockStatus}</td>
             <td>$${item.price}</td>
-            <td>${totalPrice === 'N/A' ? totalPrice : `$${totalPrice}`}</td>
+            <td>${totalPrice === 'N/A' ? totalPrice : `RS${totalPrice}`}</td>
         `;
 
         table.appendChild(row);
