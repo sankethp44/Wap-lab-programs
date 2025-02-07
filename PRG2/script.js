@@ -86,8 +86,8 @@ function loadInventory() {
             <td><img src="${item.image}" width="50" height="50" alt="${item.name}"></td>
             <td>${item.name}</td>
             <td>${stockStatus}</td>
-            <td>$${item.price}</td>
-            <td>${totalPrice === 'N/A' ? totalPrice : `RS${totalPrice}`}</td>
+            <td>Rs${item.price}</td>
+            <td>${totalPrice === 'N/A' ? totalPrice : `Rs${totalPrice}`}</td>
         `;
 
         table.appendChild(row);
